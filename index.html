@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta con Viajando.pe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .landing-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url('https://via.placeholder.com/1500x900'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+        }
+        .form-container h1 {
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .form-container p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+        <div class="form-container">
+            <h1>¡Planifica tu Próximo Viaje!</h1>
+            <p>Regístrate para recibir las mejores ofertas y promociones en destinos únicos.</p>
+            <!-- Formulario que se conecta a Zoho CRM -->
+            <form action="https://crm.zoho.com/crm/WebForm" method="POST" id="zoho_form" name="WebForm" enctype="multipart/form-data" accept-charset="UTF-8">
+                <!-- Identificación del formulario -->
+                <input type="hidden" name="xnQsjsdp" value="IDENTIFICADOR_UNICO" />
+                <input type="hidden" name="zc_gad" id="zc_gad" value="" />
+                <input type="hidden" name="xmIwtLD" value="PARAMETRO_EXTRA" />
+                <input type="hidden" name="actionType" value="TGVhZHM=" />
+                <input type="hidden" name="returnURL" value="https://viajando.pe/agradecimiento/" />
+                
+                <!-- Campos del formulario -->
+                <input type="text" name="Name" placeholder="Nombre Completo" required />
+                <input type="email" name="Email" placeholder="Correo Electrónico" required />
+                
+                <!-- Botón de envío -->
+                <button type="submit">¡Regístrate Ahora!</button>
+            </form>
+            <div class="footer">Protegemos tu privacidad. No compartiremos tu información.</div>
+        </div>
+    </div>
+</body>
+</html>
